@@ -20,4 +20,4 @@ with st.container(height=750, border=True):
                  st.button("Light Mode", use_container_width=True) #ต้องทำlight mode
 
 
-st.button("Save change")  
+st.button("Save change")
