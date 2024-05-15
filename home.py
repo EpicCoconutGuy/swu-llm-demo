@@ -6,3 +6,6 @@ st.sidebar.container(height=100, border=True)
 
 col1, col2 = st.columns([1, 1])
 st.column_config.Column(["1", "2"])
+
+st.divider
+st.write("hello this is nam")
