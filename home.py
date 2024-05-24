@@ -1,4 +1,3 @@
-from backend import ChatGPT
 import streamlit as st
 
 #load settings
