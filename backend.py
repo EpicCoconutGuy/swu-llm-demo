@@ -3,7 +3,7 @@ import openai
 import os
 from dotenv import load_dotenv
 
-class chatGPT:
+class ChatGPT:
     def __init__(self):
         load_dotenv()
         self.api_key = os.getenv("openai_APIKEY")

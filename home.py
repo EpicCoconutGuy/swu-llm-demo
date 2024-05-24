@@ -1,7 +1,5 @@
 from backend import ChatGPT
-from settings import settings_menu
 import streamlit as st
-
 
 st.markdown("<h2 style='text-align: center;'>Question 1</h2>", unsafe_allow_html=True)
 
@@ -15,7 +13,8 @@ with toolBar_Col:
     st.divider()
     st.button("🙍‍♂️", use_container_width=True, help="Profile", key="profile")
     st.button("🚪", use_container_width=True, help="Exit", key="exit")
-    st.button("⚙️", use_container_width=True, help="Settings", on_click=settings_menu, key="settings")
+    if st.button("⚙️", use_container_width=True, help="Settings", key="settings"):
+        st.switch_page("pages/3_Settings.py")
 
 with main_Col:
     with st.container(height=255,border=True):
