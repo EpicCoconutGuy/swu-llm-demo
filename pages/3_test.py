@@ -22,3 +22,13 @@ if "role" in st.session_state:
 else: st.session_state["role"] = "Student"
 
 #start
+st.markdowwn("## test")
+with st.container(height=180, border=True):
+    logoCol, loginCol= st.columns([60,40])
+    with logoCol:
+        logoPic = st.image("https://upload.wikimedia.org/wikipedia/commons/2/2c/Default_pfp.svg", width=300)
+    with loginCol:
+        st.header("Welcome to swu llm app")
+        loginButton = st.button("COntinue without login",use_container_width=True, help="Login")
+        if loginButton:
+            st.switch_page("###")
