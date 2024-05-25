@@ -38,7 +38,7 @@ with toolBar_Col:
     if profileButton:
         st.switch_page("pages/1_Profile.py")
     if settingsButton:
-        st.switch_page("pages/3_Settings.py")
+        st.switch_page("pages/2_Settings.py")
 
 with main_Col:
     with st.container(height=255,border=True):
