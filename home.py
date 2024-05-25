@@ -32,6 +32,13 @@ with toolBar_Col:
     powerup4 = st.button("🆙", use_container_width=True, key="4")
     powerup5 = st.button("🆙", use_container_width=True, key="5")
     st.divider()
+    profileButton = st.button("🙍‍♂️", use_container_width=True, help="Profile")
+    exitButton = st.button("🚪", use_container_width=True, help="Exit")
+    settingsButton = st.button("⚙️", use_container_width=True, help="Settings")
+    if profileButton:
+        st.switch_page("pages/1_Profile.py")
+    if settingsButton:
+        st.switch_page("pages/2_Settings.py")
 
 with main_Col:
     with st.container(height=255,border=True):
