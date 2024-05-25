@@ -22,7 +22,6 @@ if "role" in st.session_state:
 else: st.session_state["role"] = "Student"
 
 #start
-st.markdown("## test")
 with st.container(height=180, border=True):
     logoCol, loginCol= st.columns([60,40])
     with logoCol:
