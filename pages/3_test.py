@@ -26,7 +26,7 @@ logoCol, loginCol= st.columns([60,40])
 with logoCol:
     logoPic = st.image("https://upload.wikimedia.org/wikipedia/commons/2/2c/Default_pfp.svg", width=300)
 with loginCol:
-    st.header("Welcome to swu llm app")
-    loginButton = st.button("COntinue without login",use_container_width=True, help="Login")
+    st.markdown("<h2 style='text-align: center;'>Welcome to swu llm app 1</h2>", unsafe_allow_html=True)
+    loginButton = st.button("Continue without login",use_container_width=True, help="Login")
     if loginButton:
         st.switch_page("###")
