@@ -22,10 +22,11 @@ if "role" in st.session_state:
 else: st.session_state["role"] = "Student"
 
 #start
-usernameValue = st.text_input(label="Username", value=st.session_state["username"])
+st.markdown("<h2 style='text-align: center;'>Logopic 1</h2>", unsafe_allow_html=True)
 
 toolBar_Col, main_Col= st.columns([1,13])
 with toolBar_Col:
+    ## st.markdown("<h2> style='text-align: bottomright;'>")
     profileButton = st.button("🙍‍♂️", use_container_width=True, help="Profile")
     settingsButton = st.button("⚙️", use_container_width=True, help="Settings")
     if profileButton:
