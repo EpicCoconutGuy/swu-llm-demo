@@ -33,5 +33,4 @@ with toolBar_Col:
     if settingsButton:
         st.switch_page("pages/2_Settings.py")
 
-with main_Col:
 
